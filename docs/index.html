@@ -6,90 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>CS 410</title>
   <style>
-    @font-face {
-      font-family: cm;
-      src: url('/static/font/cmunrm.ttf');
-      font-weight: normal;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: cmbd;
-      src: url('/static/font/cmunrb.ttf');
-      font-weight: bold;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: cmit;
-      src: url('/static/font/cmunci.ttf');
-      font-weight: italic;
-      font-style: normal;
-    }
-    html {margin: 0px auto; background: #faf8f7; color: #26261f; 
-      font-family: cm; text-align: center;}
-    body {margin: 0px auto; text-align: left; 
-      max-width: 400px; background: #f6f0ee; position: relative;
-       padding-bottom: 4em;}
+    html {
+      margin: 0px auto; 
+      background: #faf8f7; 
+      color: #26261f; 
+      font-family: sans-serif; 
+      text-align: center;}
+    body {
+      margin: 0px auto; 
+      text-align: left; 
+      max-width: 400px; 
+      background: #f6f0ee; 
+      position: relative;
+      padding-bottom: 4em;}
     header {
       color: #526a56;
       position: relative;
-      background-color: #efe1e3; padding-top: 1em; padding-left: 2em;
-    }
+      background-color: #efe1e3; 
+      padding: 1em; 
+      padding-top: 3em;
+      text-align: center;}
+    body > p {
+      padding-left: 1em;
+      padding-right: 1em;}
     header,
     header * {
       -webkit-user-select: none;
-      user-select: none;
-    }
-    /*
-    header::after {
-      position: absolute;
-      font-family: cmit;
-      content: "Spring session";
-      background-color: #efe1e3;
-      border-radius: 20px;
-      padding: 2px;
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-      width: 7em;
-      text-align: center;
-      left: calc(50% - 4em);
-      bottom: -0.6em;
-    }*/
-    #spring-badge {
-      position: absolute;
-      font-family: cmit;
-      background-color: #efe1e3;
-      border-radius: 20px;
-      padding: 2px 0.5em;
-      width: 7em;
-      text-align: center;
-      left: calc(50% - 4em);
-      bottom: -0.6em;
-      cursor: pointer;
-      user-select: none;
-      z-index: 5;
-    }
-
-    .flower-burst {
-      position: fixed;
-      left: 0;
-      top: 0;
-      pointer-events: none;
-      font-size: 1.4rem;
-      will-change: transform, opacity;
-      animation: flower-float 900ms ease-out forwards;
-      z-index: 9999;
-    }
-
-    @keyframes flower-float {
-      0% {
-        opacity: 1;
-        transform: translate(0, 0) scale(1.0) rotate(0deg);
-      }
-      100% {
-        opacity: 0;
-        transform: translate(var(--dx), var(--dy)) scale(1.0) rotate(var(--rot));
-      }
-    }
+      user-select: none;}
     pre {margin: 0; text-align: left; 
       font-family: 'Fira Mono', monospace; 
       border-right: solid #bbb 2px; max-width: 43rem; 
@@ -167,7 +110,14 @@
     CS 410 Computational Science; Spring 2026
   </header>
   <p>
-    <a href="https://theartofhpc.com/istc.html">Textbook</a>
+    Computational science is the scientific investigation of problems through modeling, simulation and analysis of physical processes on a computer. 
+    An indispensable tool in many branches of research, scientific computing is vitally important for studying a wide range of physical and social phenomena. 
+    This computer science course will consist of an interdisciplinary blend of scientific modeling, applied mathematics, computational techniques and practices. 
+    We will cover a variety of advanced topics in numerical analysis and algorithm design for high-performance computing. 
+    Advanced techniques in numerical linear algebra and numerical solutions to partial differential equations (including finite difference and finite element methods) will be covered.
+    <br>
+    This course will require you to synthesize information from multiple sources including in-class notes, lecture slides, livecoding demos, among others. 
+    We will not follow a textbook precisely, but much material (and assigned reading) will be taken from the following <i><a href="https://theartofhpc.com/istc.html">Introduction to High Performance Scientific Computing, 3ed</a></i>
     <br>
     <a href="https://canvas.uoregon.edu/courses/287894">Canvas</a>
   </p>
