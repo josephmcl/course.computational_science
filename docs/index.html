@@ -15,14 +15,14 @@
     body {
       margin: 0px auto; 
       text-align: left; 
-      max-width: 400px; 
-      background: #fff1e5; 
+      max-width: 600px; 
+      background: #fff6efff; 
       position: relative;
       padding-bottom: 4em;}
     header {
       color: black;
       position: relative;
-      background-color: #fcd0b1; 
+      background-color: #ffe4d0ff; 
       padding: 1em; 
       padding-top: 3em;
       text-align: center;}
@@ -42,14 +42,15 @@
     /*pre a::after {content: " 🔗";}
     pre a.nojunk::after {content: "";}
     pre b { color: #4f55ff; text-decoration: none; } */
-    h1 { color: #526a56; font-family: cmbd; font-size: 1.25em;}
-    h3 {font-family: cmbd; } 
-    b {font-family: cmbd; } 
+    h1 {padding-left: 1em; font-size: 1.25em;}
+    h2 {padding-left: 1em; font-size: 1.25em;}
     ul {max-width: 400px; text-align: left; 
-      list-style-position: inside; list-style-type: square; 
-      padding-left: 1em; }
-    ul > li { display:list-item; margin-right: 2em; max-width: 100%; 
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+       list-style-type: square;
+      padding-left: 2em; }
+    ul > li { 
+      display:list-item; 
+      max-width: 100%; 
+      white-space: wrap;}
     #icon {display: block; position: absolute; left: 1.75em; top: 3em; 
       transform: rotate(-10deg);
       height: 4.5em; filter: invert(39%) sepia(12%) saturate(597%) hue-rotate(74deg) brightness(91%) contrast(86%);}
@@ -61,24 +62,6 @@
     details[open] {border: 1px solid black; margin: 1em; 
       margin-left: 0; border-left: none; border-right: none; 
       background-color: #e9f3e7;}
-    details > summary::-webkit-details-marker {
-      display: none;         /* Chrome/Safari */
-    }
-    details > summary {
-      list-style: none;      /* Firefox */
-    }
-    details > summary::before {
-      content: "▷";/*"☞";*/          /* closed */
-      display: inline-block;
-      width: 2em;            /* aligns nicely */
-      transform-origin: 50% 50%;
-      transition: transform 120ms ease;
-    }
-
-    /* rotate when open */
-    details[open] > summary::before {
-      transform: rotate(90deg)  translateX(8px); /* ▸ -> ▾ */
-    }
     .nodot{ list-style: none; }
     #current {
       border-radius: 1px;
@@ -101,8 +84,8 @@
       left: -2px;
     }
     h3 {margin-top: 3em; margin-bottom: 5px;}
-    hr {max-width: 400px; margin-left: 0; margin-right:20px; 
-      margin-top: 5px;height:1px;background-color: black;border: none;}
+    hr {max-width: 400px; margin-left: 0; margin-right: 20px; 
+      margin-top: 5px; height: 1px; background-color: black;border: none;}
   </style>
 </head>
 <body style="position: relative;">
@@ -120,17 +103,37 @@
     We will not follow a textbook precisely, but much material (and assigned reading) will be taken from the following <i><a href="https://theartofhpc.com/istc.html">Introduction to High Performance Scientific Computing, 3ed</a></i>
     <br><br>
     <a href="https://canvas.uoregon.edu/courses/287894">Canvas</a>
-    <br><br>
+    <br>
+    <h2>Schedule</h2>
     <table style="padding-left:1em; padding-right:1em;">
       <tr>
         <th style="text-align:center;">Week</th>
-        <th style="width:175px; text-align:center;">Topic</th>
+        <th style="text-align:center;">Topic</th>
         <th style="text-align:center;">Reading</th>
+        <th style="min-width: 75px; text-align:center;">Notes</th>
       </tr>
       <tr>
         <td style="text-align:center;">1</td>
-        <td style="font-size:0.75em">Setting up Julia, VSCode, Overleaf, Google Colab/University Cluster; Gaussian Elimination.</td>
-        <td style="font-size:0.75em">Single Processor Computing, Numerical Linear Algebra<br>pp. 10-18, 174-192, 229-234</td>
+        <td style="font-size:0.75em">
+          <ul>
+            <li><b>Introduction</b> &mdash; Julia, VSCode, Latex/Overleaf</li>
+            <li><b>Compute resources</b> &mdash; Google Colab/University Cluster</li>
+            <li><b>Gaussian Elimination</b></li>
+          </ul>
+        </td>  
+        <td style="font-size:0.75em">
+          <ul>
+            <li>Single Processor Computing</li>
+            <li>Numerical Linear Algebra</li>
+            <li class="nodot"><i>pp. 10-18, 174-192, 229-234</i></li>
+          </ul>
+        </td>
+        <td style="font-size:0.75em">
+         <ul>
+            <li>Lecture 1</li>
+            <li>Lecture 2</li>
+          </ul>
+        </td>
       </tr>
     </table>
   </p>
